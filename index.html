@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="website icon" type="png" href="image/fav-icon.png">
+</head>
+<body>
+    <header>
+        <h1>Student Registration System</h1>
+        <p class="description">The Student Registration System allows users to add, edit, and delete student information such as name, ID, email, and mobile number. The data entered is dynamically displayed in the table and is saved to the browser's local storage.
+            <span>Key functionalities include:</span> Add Student Data, Edit Student Data, Delete Student Data, Data Persistence.
+        </p>
+       
+    </header>
+    <main>
+        <!----------------form-section------------------->
+        <section class="form-section">
+            <form id="student-form" action="f">
+                <label for="name">Student Name:</label>
+                <input type="text" id="name" class="nameInput" name="name" required>
+
+                <label for="studentId">Student Id:</label>
+                <input type="number" id="studentId" class="idInput" name="studentId" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" class="emailInput" name="email" required>
+
+                <label for="number">Number:</label>
+                <input type="number" id="number" class="mobileNoInput" name="number" required>
+
+                <button type="button" class="addButton">Add</button>
+            </form>
+        </section>
+        <!-----------------table-section------------------->
+        <section class="table-section">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Student Id</th>
+                        <th>Email</th>
+                        <th>Mobile No.</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody class="data-body">
+                    
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>copyright@ PRANAY</p>
+    </footer>
+
+    <script src="index.js" charset="UTF-8"></script>
+</body>
+</html>
